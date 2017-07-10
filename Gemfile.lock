@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/ToastGhost522/nielsen_view_tool
+  revision: e5182bf9a1898f2ac754fe9506abb3dbf097db3f
+  specs:
+    nielsen_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -191,6 +197,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  nielsen_view_tool!
   pg (~> 0.18)
   pry-byebug
   puma (~> 3.0)
