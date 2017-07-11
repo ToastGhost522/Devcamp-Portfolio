@@ -5,10 +5,5 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
   include DefaultPageContent
   
-  before_action :set_copyright
-  
-  def set_copyright
-    @copyright = NielsenViewTool::Renderer.copyright 'Emmy Nielsen', 'All rights reserved'
-  end
 end
 
