@@ -42,7 +42,7 @@ end
     subtitle: "Angular",
     body: "Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam sit amet lacus nec tortor placerat suscipit. Pellentesque.",
     main_image: "http://placehold.it/600x400",
-    thumb_image: "http://placehold.it/350x200"
+    thumb_image: "http://placehold.it/356x280"
   )
 end
 
