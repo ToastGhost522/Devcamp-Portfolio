@@ -1,15 +1,86 @@
-<h1>About Me</h1>
-
-<hr>
-
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "http://placehold.it/600x750", width: 300, alt: "profile image" %> 
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
+    
+    <hr>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "http://placehold.it/600x750", width: 300, alt: "profile image", class: 'profile-img' %> 
+        
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div 
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progress-bar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      
+      
+      <div class="col-md-8">
+        <p>My name is Emmy Nielsen. I am a high school student with coding experience in C# and Ruby on Rails. Have some Lorem Ipsum.</p>
+       
+        <p>
+          Nullam eu varius massa, vitae aliquam arcu. Integer posuere nisl sed leo vestibulum, quis facilisis justo pellentesque. Proin elit ligula, ultrices at fringilla in, auctor et arcu. Quisque varius turpis ipsum, at pulvinar diam eleifend blandit. Curabitur laoreet, urna eget viverra lacinia, erat enim venenatis enim, ac suscipit nisl massa vel velit. Vestibulum tincidunt ante ut condimentum gravida. Praesent sit amet dui odio. Morbi mollis risus sed metus lacinia, ut viverra purus porta. Aliquam in dolor non nunc porta varius. Sed congue ipsum et hendrerit condimentum. Nulla facilisi. Quisque leo enim, blandit auctor tincidunt sed, varius eu nisl.
+        </p>
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#loremIpsum"
+            aria-expanded="false"
+            aria-controller="loremIpsum"
+          >
+            Lorem Ipsum
+          </button>
+          
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controller="education"
+          >
+            Education
+          </button>
+        </p>
+        
+        <p>
+          <div class="collapse" id="loremIpsum">
+            <div class="card card-block">
+              Ipsummmmmmmmmmmmmm
+            </div>
+             <div class="card card-block">
+              Ipsummmmmmmmmmmmmm Againnnnnn
+            </div>
+          </div>
+        </p>
+        
+        <p>
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Knowledggggggggeee
+            </div>
+             <div class="card card-block">
+              Booooooookksssssss
+            </div>
+          </div>
+        </p>        
+      </div>  
+    </div>
   </div>
-  
-  
-  <div class="col-md-8">
-    <p>My name is Emmy Nielsen. I am a high school student with coding experience in C# and Ruby on Rails.</p>
-  </div>  
 </div>
+
 
